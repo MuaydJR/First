@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section1">
+        <h2>quantity adding and reset</h2>
+        <p>the quantity result in <em>pop-up</em></p>
+      <button class="button1" onclick="
+        showquantity();
+      ">show quantity</button>
+      <button class="button1" onclick="
+        cartQuantity = cartQuantity + 1;
+        showquantity();       
+      ">add to cart</button>
+      <button class="button1" onclick="
+        cartQuantity = cartQuantity + 2;
+        showquantity();     
+      ">+2</button>
+      <button class="button1" onclick="
+        cartQuantity = cartQuantity + 3;
+        showquantity();       
+      ">+3</button>
+      <button class="button1 reset" onclick="
+        cartQuantity = cartQuantity = 0;
+        console.log(`the cart was reset`);
+        showquantity();       
+      ">reset the cart</button>
+    </section>
+   <hr>
+    <section class="section2">
+         <h2>rock paper scissors</h2>
+        <button class="button2" onclick="
+            playGame('rock');
+        ">ROCK</button>  
+        <button class="button2" onclick="
+            playGame('paper');
+        ">PAPER</button>  
+        <button class="button2" onclick="
+            playGame('scissors');
+        ">SCISSORS</button> 
+        <button class="button2 resset res" onclick="
+         const score = {
+         wins: 0,
+         losses: 0,
+         ties: 0
+         };
+        ">reset score</button>
+    </section>
+    <footer>
+        <address>©copyright 2014-2024</address>
+        <p>All right reserved</p>
+    </footer>
+  <script src="main.js"></script>
+</body>
+</html>
