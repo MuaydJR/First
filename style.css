@@ -52,6 +52,7 @@ hr {
        padding: 10px 0px 19px 0px;
        background: black;
 }
+footer {
     background: linear-gradient(180deg,red,orange);
     background-repeat:no-repeat;
     bottom:30px;
